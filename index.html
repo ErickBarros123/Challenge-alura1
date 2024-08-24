@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img class="Logo-alura" src="images/LogoAlura.svg" alt="Logo-alura">
+            <form> 
+                <textarea id="texto-principal" type="text" placeholder="Digite seu texto"></textarea>
+                <div>
+                    <div class="alerta">
+                        <img src="">
+                    </div>
+                    <div class="buttons">
+                        <button class="button1" id="criptografar">Criptografar</button>
+                        <button class="button2" id="descriptografar">Descriptografar</button>
+                        <button class="copy" id="copyi" onclick="copiarTexto()">Copiar</button>  
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="right">
+            <div class="first-back">
+                <img src="images/looking (1).svg" id="mensagem-nao-encontrada" alt="nenhuma mensagem encontrada">
+                <h2 class="titulo-sem-retorno">Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                <div class="texto-criptografado d-none">
+                    <p></p>
+                     
+            </div>
+        </div>
+    </div>
+</body>
+</html>
