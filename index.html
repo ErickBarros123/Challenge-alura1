@@ -16,31 +16,36 @@
     <div class="container">
         <div class="left">
             <img class="Logo-alura" src="images/LogoAlura.svg" alt="Logo-alura">
-            <form> 
-                <textarea id="texto-principal" type="text" placeholder="Digite seu texto"></textarea>
+            <form id="text-form"> 
+                <textarea id="bb" type="text" placeholder="Digite seu texto"></textarea>
                 <div>
                     <div class="alerta">
                         <img src="">
                     </div>
                     <div class="buttons">
-                        <button class="button1" id="criptografar">Criptografar</button>
-                        <button class="button2" id="descriptografar">Descriptografar</button>
-                        <button class="copy" id="copyi" onclick="copiarTexto()">Copiar</button>  
+                        <button type="button" class="button1" id="criptografar">Criptografar</button>
+                        <button type="button" class="button2" id="descriptografar">Descriptografar</button>
+                        <button type="button" class="copy" id="copyi">Copiar</button>  
                     </div>
                 </div>
             </form>
         </div>
 
         <div class="right">
-            <div class="first-back">
+            <div id="output">
+             <div class="first-back">
                 <img src="images/looking (1).svg" id="mensagem-nao-encontrada" alt="nenhuma mensagem encontrada">
                 <h2 class="titulo-sem-retorno">Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar</p>
                 <div class="texto-criptografado d-none">
-                    <p></p>
-                     
+                </div>
+             </div>
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>
+
+
